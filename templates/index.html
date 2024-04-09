@@ -162,12 +162,11 @@
             </div>
             <div class="nav__bar">
                 <ul class="nav__links">
-                    <li class="link"><a href="/home">Home</a></li>
-                    <li class="link"><a href="/about">About </a></li>
-                    <li class="link"><a href="/convertor">Convertor </a></li>
-                    <li class="link"><a href="/sign up">Sign up</a></li>
+                    <li class="link"><a href="{% url 'index' %}">Home</a></li>
+                    <li class="link"><a href="{% url 'about' %}">About </a></li>
+                    <li class="link"><a href="/signup">Sign up</a></li>
                     <li class="link"><a href="/login">Login </a></li>
-                    <li class="link"><a href="/contact">Contact</a></li>
+                    <li class="link"><a href="{% url 'contact' %}">Contact</a></li>
 
                 </ul>
             </div>
@@ -232,10 +231,7 @@
             </div>
         </section>
     </section>
-    <div
-        style="background-color: #226378dd; text-align: center; padding: 10px 0; position: fixed; bottom: 0; width: 100%; color: #ECE8DD;">
-        Copyright ©shivani and neha. All rights reserved.
-    </div>
+    
 
     <script>
         function record() {

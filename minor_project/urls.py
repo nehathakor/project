@@ -19,12 +19,11 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('signup/', views.signup, name='signup'),
+    path('', views.signup, name='signup'),  # Root URL directs to signup
+    path('about/', views.about_view, name='about'),
+    path('contact/', views.contact_view, name='contact'),
     path('login/', views.login, name='login'),
-     path('about/',views.about_view,name='about'),
-    path('', views.index, name='index'),
-    path('index/',views.animation_view,name='index'),
-    
-    # Add more URL patterns as needed
+    path('index/', views.animation_view, name='index'),
+    path('signup/', views.signup, name='signup'),
 ]
 
